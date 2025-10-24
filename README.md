@@ -1,7 +1,7 @@
 # Pipeline Simulator  
 **Interactive CPU Pipeline Simulator & Visualizer**
 
-[Visit the live demo →](https://pipeline-simulator.vercel.app)
+[Visit the live demo →](https://pipeline-simulator-coral.vercel.app)
 
 ## Table of Contents  
 - [Overview](#overview)  
