@@ -1,73 +1,53 @@
-# Welcome to your Lovable project
+# Pipeline Simulator  
+**Interactive CPU Pipeline Simulator & Visualizer**
 
-## Project info
+[Visit the live demo →](https://pipeline-simulator.vercel.app)
 
-**URL**: https://lovable.dev/projects/d3742c85-75f5-41d2-87f2-165a64df2f27
+## Table of Contents  
+- [Overview](#overview)  
+- [Features](#features)  
+- [Tech Stack](#tech-stack)  
+- [Getting Started](#getting-started)  
+- [Usage](#usage)  
+- [Project Structure](#project-structure)  
+- [Contributing](#contributing)  
+- [License](#license)  
+- [Acknowledgements](#acknowledgements)  
 
-## How can I edit this code?
+## Overview  
+Pipeline Simulator provides an interactive web-based environment to visualize and experiment with CPU instruction pipelines, hazards, forwarding, stalls, and more. It is especially useful for students learning computer architecture and pipeline design.
 
-There are several ways of editing your application.
+Using this tool, you can:  
+- Configure the pipeline depth and stages  
+- Insert instructions and monitor their flow through the pipeline  
+- Visualize hazards (data, control, structural) and how they affect throughput  
+- Understand techniques like forwarding/ bypassing and pipeline stalls  
+- Analyze performance (cycles, instructions completed, CPI)  
 
-**Use Lovable**
+## Features  
+- Live, step-by-step visualization of instructions moving through pipeline stages.  
+- Hazard detection and highlighting.  
+- Forwarding (bypass) logic simulation.  
+- Pipeline stalls and bubbles simulation.  
+- Performance metrics: cycle count, instruction count, CPI.  
+- Intuitive UI: drag-and-drop instructions, configurable pipeline parameters.  
+- Export/loading of instruction sequences (if supported).  
+- Responsive layout: works on desktop and tablets.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/d3742c85-75f5-41d2-87f2-165a64df2f27) and start prompting.
 
-Changes made via Lovable will be committed automatically to this repo.
+## Tech Stack  
+- Frontend: React.js, Typescript, Vite (hooks, functional components)  
+- UI/Visualization: CSS, SVG/Canvas, or relevant library   
+- Backend: None / Static hosting (Vercel)  
+- Build & deployment: Vite or Create React App, deployed to Vercel  
 
-**Use your preferred IDE**
+## Getting Started  
+### Prerequisites  
+- Node.js (v16 or later)  
+- npm or yarn  
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/d3742c85-75f5-41d2-87f2-165a64df2f27) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+### Installation  
+```bash
+git clone https://github.com/your-username/pipeline-simulator.git
+cd pipeline-simulator
+npm install    # or yarn install
